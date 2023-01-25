@@ -100,8 +100,7 @@ a:link, a:visited {
     color: #D55C5F;
     box-shadow: none; /* Remove default red glow in Firefox */
   }
-.client-form{
-    
+.client-form{   
     gap: 10px;
     grid-area: form;
     display: grid;
@@ -110,7 +109,7 @@ a:link, a:visited {
     "row2col1 . row2col2 ."
     "row3col1 . row3col2 ."
     ". . . ."
-    ". row4col1 . .";
+    "row4col1. . .";
 }
 .row1.col1{
     grid-area: row1col1;
