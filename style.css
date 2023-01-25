@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+body{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+main{
+    display: flex;
+    height: 100vh;
+    
+}
+.picture{
+    display:grid;
+    background-image: url(Images/austin-kehmeier-lyiKExA4zQA-unsplash.jpg);
+    background-position: auto;
+    background-size: auto;
+    background-repeat: repeat;
+    width: 40vw;
+    background-size: cover;
+    background-position: center;
+    
+}
+.flask{
+    height: 10vh;
+}
+.logo{
+    background-color: rgba(167, 167, 167, 0.7);
+    height: auto;
+    width: 100%;
+    justify-self: center;
+    display: inline;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gugi', cursive;
+}
+.credits{
+display: flex;
+background-color: rgba(167, 167, 167, 0.7);
+width: 100%;
+align-self: end;
+justify-self: center;
+color:black;
+justify-content: center;
+}
+.cred.paragraph{
+    margin:2px;
+}
+a:link, a:visited {
+    color: black;
+    text-decoration: underline;
+    cursor: auto;
+  }
+  a:hover, a:visited:active {
+    color: red;
+  }
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #EAEDF0;
+}
+.message{
+    justify-self:center;
+    align-self: end;
+}
+.sectionForm{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "form form"
+;
+}
+.subtitle{
+    grid-area: header;
+}
+.client-form{
+    grid-area: form;
+    display: grid;
+    grid-template-areas: 
+    "row1col1 row1col2"
+    "row2col1 row2col2"
+    "row3col1 row3col1"
+    "row4col1 row4col1";
+}
+.row1.col1{
+    grid-area: row1col1;
+}
+.row1.col2{
+    grid-area: row1col2;
+}
+.row2.col1{
+    grid-area: row2col1;
+}
+.row2.col2{
+    grid-area: row2col2;
+}
+.row3.col1{
+    grid-area: row3col1;
+}
+.row3.col2{
+    grid-area: row3col2;
+}
+.row4.col1{
+    grid-area: row4col1;
+}.row4.col2{
+    grid-area: row4col2;
+}
