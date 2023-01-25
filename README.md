@@ -6,6 +6,9 @@ A sign-up form from The Odin Project: https://www.theodinproject.com/lessons/nod
 2. Use CSS grid.
 3. Import fonts
 
+## Live:
+https://adriangutierrezgomez.github.io/Project_Sign-up_Form/
+
 ### Copyright
 Photo by <a href="https://unsplash.com/@xteemu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Teemu Paananen</a> on <a href="https://unsplash.com/photos/OOE4xAnBhKo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
