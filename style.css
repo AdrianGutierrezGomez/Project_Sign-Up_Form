@@ -54,6 +54,7 @@ a:link, a:visited {
     color: red;
   }
 .content{
+    padding: 2%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -63,6 +64,7 @@ a:link, a:visited {
     justify-self:center;
     align-self: end;
     font-size: 1.75rem;
+    margin-bottom: 5%;
 }
 .sectionForm{
     display: grid;
@@ -75,7 +77,6 @@ a:link, a:visited {
     grid-area: header;
 }
 .form-row {
-    margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -83,6 +84,7 @@ a:link, a:visited {
   }
   .form-row input[type='text'],
   .form-row input[type='email'],
+  .form-row input[type='password'],
   .form-row select,                 
   .form-row textarea {
     background-color: #FFFFFF;
@@ -99,14 +101,16 @@ a:link, a:visited {
     box-shadow: none; /* Remove default red glow in Firefox */
   }
 .client-form{
+    
     gap: 10px;
     grid-area: form;
     display: grid;
     grid-template-areas: 
-    "row1col1 row1col2"
-    "row2col1 row2col2"
-    "row3col1 row3col2"
-    "row4col1 row4col2";
+    "row1col1 . row1col2 ."
+    "row2col1 . row2col2 ."
+    "row3col1 . row3col2 ."
+    ". . . ."
+    ". row4col1 . .";
 }
 .row1.col1{
     grid-area: row1col1;
@@ -131,3 +135,29 @@ a:link, a:visited {
 }.row4.col2{
     grid-area: row4col2;
 }
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+.form-row button:hover {
+    background-color: #76AEED;
+  }
+  
+  .form-row button:active {
+    background-color: #407FC7;
+  }
+@media only screen and (min-width: 700px) {
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; /* To avoid stretching */
+      }
+    }
